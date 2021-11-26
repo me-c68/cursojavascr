@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-midth, initial-scale=1.0">
+    <title>agustin ahumada </title>
+    <style type="text/css">
+        #Cuadrado {
+            width: 100px;
+            height: 100px;
+            background: #2980b9;
+            border-color: #FF622C;
+            border-style: solid;
+            border-radius: 25px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scriptjQuery.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <div>
+        <label for="nombre"> Nombre: </label>
+        <input type="text" id="nombre" />
+
+        <label for="nombre"> Password: </label>
+        <input type="text" id="password" />
+
+        <input type="button" onclick="guardarDatos()" value="Guardar datos" />
+
+
+        <p id="datos"> Pulsa para ver tu nombre y tu password. </p>
+
+        <input type="button" onclick="recuperarDatos()" value="Recuperar datos" />
+
+
+    </div>
+
+
+
+
+
+
+
+
+    a continuacion se haran unas operaciones matematicas <br>
+
+    <input type="text" id="numero1" placeholder="ingrese el primer numero"><br>
+
+    <input type="text" id="numero2" placeholder="ingrese el segundo numero"><br>
+
+    <button id="op1">sumar</button>
+    <button id="op2">restar</button>
+    <button id="op3">dividir</button>
+    <button id="op4">multiplicar</button>
+
+
+    <h2 id="resultado"></h2>
+
+    <div>
+        después del botón vamos a pintar un cuadrado azul con un borde naranja y cuando le demos al botón se intercambiaran los colores de este cuadrado:
+
+        <button id="boton">Cambia Color</button>
+
+        <div id="Cuadrado"></div>
+    </div>
+    <a id="ver_ocultar" class="visualizar" href="javascript:void(0);"> Ver texto </a>
+    <div id="caja" style="display: none;">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+
+    <div>
+        <form id="formulario" action="recibir.php" method="post">
+            <input type="text" placeholder="Escribe tu nombre" name="nombre" required autofocus title="Ingresa tu nombre porfavor">
+            <input type="number" placeholder="Ingresa tu edad" name="edad" required title="Ingresa tu edad porfavor">
+            <br><br>
+            <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar formulario">
+        </form>
+        <hr>
+        <p class="respuesta">
+
+            <p>
+
+
+    </div>
+    <script src="./miprimerjs.js"></script>
+
+
+</body>
+
+</html>
